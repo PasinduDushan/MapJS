@@ -1,0 +1,150 @@
+{
+    "interface": "0.0.0.0",
+    "port": 8080,
+    "title": "MapJS",
+    "headerTitle": "MapJS - NodeJS Map Replacement",
+    "locale": "en",
+    "style": "dark",
+    "sessionSecret": "98ki^e72~!@#(85o3kXLI*#c9wu5l!Z",
+    "map": {
+        "startLat": 0,
+        "startLon": 0,
+        "startZoom": 12,
+        "minZoom": 10,
+        "maxZoom": 18
+    },
+    "areas": {
+        "test": { "lat": 4.01, "lon": 117.01, "zoom": 15 }
+    },
+    "header": {
+        "left": [
+            { "name": "Stats", "url": "https://stats.example.com", "icon": "fas fa-chart-bar" }
+        ],
+        "right": [
+            { "name": "Discord", "url": "https://discord.com", "icon": "fab fa-discord" }
+        ]
+    },
+    "db": {
+        "scanner": {
+            "host": "127.0.0.1",
+            "port": 3306,
+            "username": "user",
+            "password": "pass123!",
+            "database": "rdmdb",
+            "charset": "utf8mb4",
+            "sessionTable": "sessions"
+        },
+        "manualdb": {
+            "host": "127.0.0.1",
+            "port": 3306,
+            "username": "user",
+            "password": "pass123!",
+            "database": "manualdb",
+            "charset": "utf8mb4"
+        }
+    },
+    "discord": {
+        "enabled": false,
+        "logChannelId": "",
+        "status": "Map Status: Online",
+        "botToken": "NzgyMzA0OTUxOTIwNjIzNjE2.X8KQQw.K_wJts4oaL9VZGCzH_P7lHf1aOU",
+        "clientId": "782304951920623616",
+        "clientSecret": "uwHhh7rOVcX7k7FCbCUH40Wg8E8pix",
+        "redirectUri": "http://localhost:8080/api/discord/callback",
+        "allowedGuilds": ["770514283125538837"],
+        "blockedGuilds": [],
+        "allowedUsers": [],
+        "perms": {
+            "map": {
+                "enabled": true,
+                "roles": ["783240347433959435"]
+            },
+            "pokemon": {
+                "enabled": true,
+                "roles": ["783240444292366347"]
+            },
+            "raids": {
+                "enabled": true,
+                "roles": ["783240533317124116"]
+            },
+            "gyms": {
+                "enabled": true,
+                "roles": ["783240613352702003"]
+            },
+            "pokestops": {
+                "enabled": true,
+                "roles": ["783240712283750400"]
+            },
+            "quests": {
+                "enabled": true,
+                "roles": ["783240827572060190"]
+            },
+            "lures": {
+                "enabled": true,
+                "roles": ["783240596239548447"]
+            },
+            "invasions": {
+                "enabled": true,
+                "roles": ["783241002583326720"]
+            },
+            "spawnpoints": {
+                "enabled": true,
+                "roles": ["783241094002900999"]
+            },
+            "iv": {
+                "enabled": true,
+                "roles": ["783241180276064286"]
+            },
+            "pvp": {
+                "enabled": true,
+                "roles": ["783241243944550430"]
+            },
+            "s2cells": {
+                "enabled": true,
+                "roles": ["783241312127549440"]
+            },
+            "submissionCells": {
+                "enabled": true,
+                "roles": ["783241395895926785"]
+            },
+            "nests": {
+                "enabled": true,
+                "roles": ["783241473540882435"]
+            },
+            "portals": {
+                "enabled": true,
+                "roles": ["783241543707918336"]
+            },
+            "scanAreas": {
+                "enabled": true,
+                "roles": ["783241609911205908"]
+            },
+            "weather": {
+                "enabled": true,
+                "roles": ["783241676272959529"]
+            },
+            "devices": {
+                "enabled": true,
+                "roles": ["783241760755286016"]
+            }
+        }
+    },
+    "tileservers": {
+        "Alidade Smooth Dark": "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png; &copy; <a href='https://stadiamaps.com/'>Stadia Maps</a>, &copy; <a href='https://openmaptiles.org/'>OpenMapTiles</a> &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors",
+        "Thunder Forest": "https://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png;&copy; <a href='http://www.thunderforest.com/'>Thunderforest</a>, &copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
+        },
+    "icons": {
+        "Default": {
+            "path": "https://mygod.github.io/pokicons/v2"
+        },
+        "Local Example": {
+            "path": "/img/pokemon"
+        },
+        "Home": {
+            "path": "https://raw.githubusercontent.com/Mygod/PkmnHomeIcons/icons/icons"
+        },
+        "Shuffle": {
+            "path": "https://raw.githubusercontent.com/Mygod/pokedave_shuffle_icons_-ICONS-/master"
+        }
+    }
+}
